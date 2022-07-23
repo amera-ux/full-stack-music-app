@@ -1,6 +1,7 @@
 
 import React from 'react';
 import './NavigationBar.css';
+import {Link} from 'react-router-dom';
 
 
 
@@ -9,9 +10,8 @@ const NavigationBar = ()=> {
       <header className="NavigationBar">
           <nav>
             <ul>
-              <li>Home</li>
-              <li>Profile</li>
-              
+              <Link to="/"><li>Home</li></Link>
+              <Link to="/profile"><li>Profile</li></Link>
             </ul>
           </nav>
         </header>
